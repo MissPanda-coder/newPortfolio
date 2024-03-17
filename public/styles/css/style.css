@@ -1,4 +1,75 @@
 @charset "UTF-8";
+#navbar-brand {
+  color: aliceblue !important;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "bebas", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.nav-menu {
+  background: transparent;
+  padding: 30px;
+  width: 100%;
+  transition: all 0.4s;
+  z-index: 999999;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: "bebas", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: aliceblue !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1, .line3 {
+  width: 28px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: #57A8FE !important;
+}
+
+.nav-active {
+  color: aliceblue;
+}
+
+.dropdown-item {
+  font-family: "bebas", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -12046,15 +12117,35 @@ h1, .h1 {
   box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 50px #ffffff, 0 0 100px #ffffff;
 }
 
-.card-background-p {
-  transition: transform 300ms;
-  border-radius: 5px;
-  border: 1px solid rgba(231, 230, 230, 0.194);
-  background-image: linear-gradient(to bottom, #1d1d1d, #1b1b1b, #191919, #181818, #161616, #141414, #121212, #101010, #0d0d0d, #090909, #040404, #000000);
-  width: 400px;
-  height: 390px;
+.card-title-skills {
+  transform-style: preserve-3d;
+  animation: animateText 10s linear infinite;
 }
 
+.card-text-skills {
+  background: -webkit-linear-gradient(white, #afafaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50%, -50%;
+  transform-origin: center;
+  transform: rotateY(calc(var(--i) * 32.7272727273deg)) translateZ(80px);
+}
+
+@keyframes animateText {
+  0% {
+    transform: rotateY(0deg) translateZ(80px) rotateX(15deg); /* Décalage initial sur l'axe Z */
+  }
+  100% {
+    transform: rotateY(360deg) translateZ(80px) rotateX(-15deg); /* Rotation complète */
+  }
+}
 .card-background-skills {
   transition: transform 300ms;
   border-radius: 5px;
@@ -12064,6 +12155,20 @@ h1, .h1 {
   height: 100%;
   grid-row: 1/2;
   grid-column: 2/4;
+}
+
+.img-layout {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-background-p {
+  transition: transform 300ms;
+  border-radius: 5px;
+  border: 1px solid rgba(231, 230, 230, 0.194);
+  background-image: linear-gradient(to bottom, #1d1d1d, #1b1b1b, #191919, #181818, #161616, #141414, #121212, #101010, #0d0d0d, #090909, #040404, #000000);
+  width: 400px;
+  height: 390px;
 }
 
 #card-background-firstP {
@@ -12076,6 +12181,11 @@ h1, .h1 {
   grid-row: 2/3;
   grid-column: 3/4;
   height: 100%;
+}
+
+.article-description {
+  padding: 5px 5px;
+  line-height: 2rem;
 }
 
 .article-description-colorPink {
@@ -12103,11 +12213,6 @@ h1, .h1 {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
-}
-
-.article-description {
-  padding: 5px 5px;
-  line-height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.72.0"
+  },
+  "name": "portfoliov2",
+  "version": "1.0.0",
+  "description": "new portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w public/styles/scss/style.scss public/styles/css/style.css"
+  },
+  "author": "Adeline",
+  "license": "ISC"
+}

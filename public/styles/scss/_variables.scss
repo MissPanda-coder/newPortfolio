@@ -1,2 +1,8 @@
 
-$c-bg: #050505;
+
+@mixin cardBg{
+    transition: transform 300ms;
+    border-radius: 5px; 
+    border:1px solid rgba(231, 230, 230, 0.194);
+    background-image: linear-gradient(to bottom, #1d1d1d, #1b1b1b, #191919, #181818, #161616, #141414, #121212, #101010, #0d0d0d, #090909, #040404, #000000);
+}

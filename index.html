@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/styles/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-name">
+        <div class="name">Bienvenue sur mon portfolio</div>
+      </div>
+      <h1>
+        Developpeuse web <br />
+        web mobile
+      </h1>
+    </div>
 
+    <div class="grid-container">
+      <div class="card-grid">
+        <div class="card-background">
+          <div class="card-background-effect">
+            <div class="card-body solid text-align-center">
+              <div class="card-width">
+                <div class="profile-img-wrapper text-center"></div>
+              </div>
+              <h2 class="card-title">Adeline Aiguier</h2>
+              <p class="card-text text-white-50 text-center">
+                Développeuse web junior, je suis prête à relever des défis et
+                projets audacieux. Ma force ? Ne jamais me reposer sur mes
+                acquis.
+              </p>
 
+              <a
+                id="cv-button"
+                href="img/CV.pdf"
+                target="_blank"
+                download="CV.pdf"
+                >Télécharger CV</a
+              >
+            </div>
+          </div>
+        </div>
 
-    <article class="article">
-        <p id="article-description" class="text-white-50">Développeuse web rigoureuse, je conçois des <span class=article-description-colorPink>sites optimisés</span> en maîtrisant le SEO, la sémantique et l'accessibilité. J'utilise des bibliothèques pour des <span class=article-description-colorBlue>expériences dynamiques</span>, couvrant le responsive CSS, les interactions avec le DOM, le stockage local, les <span class=article-description-colorGreen>API</span> et les Bundlers (npm).</p>
-        <p class="text-white-50">
-         J'ai une expertise étendue en conception de <span class=article-description-colorGreen>bases de données</span>, du modèle conceptuel à l'implémentation rigoureuse pour des interfaces <span class=article-description-colorPink>sécurisées</span>. Mon travail englobe le développement complet des back-offices, offrant ainsi des solutions web complètes et <span class=article-description-colorBlue>performantes</span>.
-        </p>
-      
-      </article>
-    
-</body>
+        <div class="card-background-skills">
+          <div class="card-background-effect">
+            <div class="card-body solid text-align-center">
+                <div class="img-wrapper">
+                    <img src="public/img/BOOTSTRAP.png" alt>
+                  </div>
+                  <div class="img-wrapper"><img src="public/img/CSS.png" alt="logo de CSS"></div>
+                  <div class="img-wrapper"><img src="public/img/GITHUB.png" alt="logo de Github"></div>
+                  <div class="img-wrapper"><img src="public/img/HTML.png" alt="logo de HTML"></div>
+                  <div class="img-wrapper"><img src="public/img/JS.png" alt="logo de JavaScript"></div>
+                  <div class="img-wrapper"><img src="public/img/MYSQL.png" alt="logo de MySQL"></div>
+                  <div class="img-wrapper"><img src="public/img/PHP.png" alt="logo de PHP"></div>
+                  <div class="img-wrapper"><img src="public/img/SASS.png" alt="logo de SASS"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-background-p" id="card-background-firstP">
+          <div class="card-background-effect">
+            <div class="card-body solid text-align-center">
+              
+              <h2 class="card-title">Conceptrice web passionnée</h2>
+              <p class="article-description text-white-50">
+                Rigoureuse, je conçois des
+                <span class="article-description-colorPink"
+                  >sites optimisés</span
+                >
+                en maîtrisant le SEO, la sémantique et l'accessibilité.
+                J'utilise des bibliothèques pour des
+                <span class="article-description-colorBlue"
+                  >expériences dynamiques</span
+                >, couvrant le responsive CSS, les interactions avec le DOM, le
+                stockage local, les
+                <span class="article-description-colorGreen">API</span> et les
+                Bundlers (npm).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-background-p" id="card-background-secondP">
+          <div class="card-background-effect">
+            <div class="card-body solid text-align-center">
+              <h2 class="card-title">Sécurité, Performance, Conception</h2>
+              <p class="article-description text-white-50">
+                J'ai une expertise étendue en conception de
+                <span class="article-description-colorGreen"
+                  >bases de données</span
+                >, du modèle conceptuel à l'implémentation rigoureuse pour des
+                interfaces
+                <span class="article-description-colorPink">sécurisées</span>.
+                Mon travail englobe le développement complet des back-offices,
+                offrant ainsi des solutions web complètes et
+                <span class="article-description-colorBlue">performantes</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

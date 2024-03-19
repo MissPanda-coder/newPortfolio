@@ -26,13 +26,13 @@
           <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link m-2 menu-item active" href="home"> Accueil</a>
+                <a class="nav-link m-2 menu-item active" href="#home"> Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-2 menu-item" href="about"> A propos </a>
+                <a class="nav-link m-2 menu-item" href="#about"> A propos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-2 menu-item" href="realisations"> Réalisations </a>
+                <a class="nav-link m-2 menu-item" href="#projects"> Réalisations </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link m-2 menu-item" href="contact"> Contact </a>
@@ -42,7 +42,7 @@
         </div>
     </nav>
     <section class="wrapper">
-      <div class="wrapper-name" id="#home">
+      <div class="wrapper-name" id="home">
         <div class="name">Bienvenue sur mon portfolio</div>
       </div>
       <h1>
@@ -51,9 +51,11 @@
       </h1>
     </section>
 
-
-
-    <section class="grid-container">
+<section class="wrapper">
+    <div class="wrapper-name" id="about">
+      <div class="name">A Propos</div>
+    </div>
+    <div class="grid-container">
       <div class="cards-grid">
           <div class="card-presentation">
               <div class="card-presentation-img" id="#about">
@@ -219,10 +221,26 @@
             </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-<h3>Mes réalisations</h3>
+  <section class="wrapper" id="projects">
+    <div class="wrapper-name" id="wrapper-name-projects">
+      <div class="name">Réalisations</div>
+    </div>
+    <div class="projects-grid">
+    <div class="project-wrapper-deliver">
+      <img class="project-img" src="public/img/DeliverLeBeausset.jpg" alt="photo de mon projet appelé DeliverLeBeausset">
+    </div>
+    <p>Projet en cours de réalisation</p>
+    <div class="project-wrapper-superman">
+      <img class="project-img" src="public/img/superman.png" alt="photo de mon projet superman">
+    </div>
+    <p>Projet en cours de réalisation</p>
+
+
+  </div>
+
 
     </section>
 

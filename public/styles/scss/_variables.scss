@@ -7,8 +7,8 @@ $c-hover:#57A8FE;
     background-image: linear-gradient(to bottom, #1d1d1d, #1b1b1b, #191919, #181818, #161616, #141414, #121212, #101010, #0d0d0d, #090909, #040404, #000000);
 }
 
-@mixin circle($i) {
+@mixin circle {
     border-radius: 100%;
-    height: $i;
-    width: $i;
+    height: 1rem;
+    width: 1rem;
   }

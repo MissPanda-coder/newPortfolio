@@ -1,19 +1,23 @@
 @import "_variables";
 
-.card-background-skills{
+.card-skills{
     @include cardBg;
     width:900px;
     height:100%;
     grid-row: 1/2;
     grid-column: 2/4;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+   
   }
-  
-  .card-title-skills{
+ 
+  .card-skills-title{
       transform-style: preserve-3d;
       animation:animateText 10s linear infinite;
   }
   
-  .card-text-skills{
+  .card-skills-text{
       background: -webkit-linear-gradient(#ffff, #afafaf);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -40,12 +44,14 @@
   }
   
   
-  .img-layout{
-      display: flex;
-      flex-flow: row nowrap;
+  .card-skills-img-layout{
+    display: flex;
+    transition: all 1s ease-in-out;
+    width:auto;
   }
+
   
-  .img-wrapper{
+  .card-skills-img-wrapper{
   border-radius: 0.5em;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   border:1px solid rgba(231, 230, 230, 0.382);
@@ -54,11 +60,11 @@
   width: 162px;
 }
 
- .img{
+ .card-skills-img{
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
   width:100%;
-  height:150px;
+  height:170px;
   border:0.5px solid rgba(231, 230, 230, 0.382);
   background: -webkit-linear-gradient(#ffff, #afafaf);
   display: grid;
@@ -67,21 +73,19 @@
  }
 
   .img-logo{
-    
-      width: 6em;
-    
+  width: 6em;
   }
   
-  .img-content{
+  .card-skills-img-content{
     background: transparent;
     margin: 1em;
     text-align: center; 
     height:30px;
   }
   
-  .img-layout p{
-    margin: 1em;
+  .card-skills-img-layout p{
     text-align: center; 
+    letter-spacing: 0.2rem;
   }
 
  .map {

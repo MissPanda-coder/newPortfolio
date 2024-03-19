@@ -1,19 +1,22 @@
 @import "_variables";
 
-.card-background-p{
+.card-text-p{
     @include cardBg;
-    width:400px;
+    width:100%;
     height:390px;
 }
 
+.card-text-p-title{
+  height:80px;
+}
 
-#card-background-firstP{
+#card-text-firstP{
     grid-row: 2/3;
     grid-column: 2/3;
     height:100%;
 }
 
-#card-background-secondP{
+#card-text-secondP{
     grid-row: 2/3;
     grid-column: 3/4;
     height:100%;
@@ -25,30 +28,18 @@
   }
 
 .article-description-colorPink{
-    background: -webkit-linear-gradient(#e640ac, #cb8bee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 700;  
+    background: $pink-gradient;
+    @include colored;
   }
   
   .article-description-colorBlue{
-    background: -webkit-linear-gradient(#70C4E9, #b3e5ed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 700;
+    background: $blue-gradient;
+    @include colored;
   }
   
   .article-description-colorGreen{
-    background: -webkit-linear-gradient(#98FBCB, #b7e7c3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 700;
+    background: $green-gradient;
+   @include colored;
   }
   
   

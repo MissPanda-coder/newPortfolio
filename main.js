@@ -52,23 +52,26 @@
 //     }
 // }
 
-const buttonsWrapper = document.querySelector(".map");
+const buttons = document.querySelectorAll(".map button");
 const slides = document.querySelector(".img-layout");
 
-buttonsWrapper.addEventListener("click", e => {
-  if (e.target.nodeName === "BUTTON") {
-    Array.from(buttonsWrapper.children).forEach(item =>
-      item.classList.remove("active")
-    );
-    if (e.target.classList.contains("first")) {
-      slides.style.transform = "translateX(-0%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(-40%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains('third')){
-      slides.style.transform = 'translatex(-80%)';
-      e.target.classList.add('active');
+let currentPosition = 0; 
+
+buttons.forEach(button => {
+  button.addEventListener("click", e => {
+    if (!button.classList.contains("active")) {
+      buttons.forEach(item => item.classList.remove("active"));
+      button.classList.add("active");
+
+      if (button.classList.contains("first")) {
+        currentPosition = 0;
+      } else if (button.classList.contains("second")) {
+        currentPosition = -33;
+      } else if (button.classList.contains("third")) {
+        currentPosition = -66;
+      }
+      
+      slides.style.transform = `translateX(${currentPosition}%)`; 
     }
-  }
+  });
 });

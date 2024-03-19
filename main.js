@@ -53,7 +53,7 @@
 // }
 
 const buttons = document.querySelectorAll(".map button");
-const slides = document.querySelector(".img-layout");
+const slides = document.querySelector(".card-skills-img-layout");
 
 let currentPosition = 0; 
 

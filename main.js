@@ -1,56 +1,93 @@
-// // / Créer une scène
-// var scene = new THREE.Scene();
 
-// // Créer une caméra
-// var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-// camera.position.z = 5;
+const noise = () => {
+  let canvas, ctx;
 
-// // Créer un renderer
-// var renderer = new THREE.WebGLRenderer({ antialias: true });
-// renderer.setSize(window.innerWidth, window.innerHeight);
-// document.body.appendChild(renderer.domElement);
+  let wWidth, wHeight;
 
-// var gridSize = 5;
-// var gridStep = 1;
-// var gridColor = 0xffffff; // Couleur du quadrillage
+  let noiseData = [];
+  let frame = 0;
 
-// var gridGeometry = new THREE.BufferGeometry();
-// var positions = [];
+  let loopTimeout;
 
-// for (var i = -gridSize; i <= gridSize; i += gridStep) {
-//     positions.push(i, 0, -gridSize, i, 0, gridSize);
-//     positions.push(-gridSize, 0, i, gridSize, 0, i);
-// }
 
-// gridGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  // Create Noise
+  const createNoise = () => {
+      const idata = ctx.createImageData(wWidth, wHeight);
+      const buffer32 = new Uint32Array(idata.data.buffer);
+      const len = buffer32.length;
 
-// var gridMaterial = new THREE.LineBasicMaterial({ color: gridColor });
-// var grid = new THREE.LineSegments(gridGeometry, gridMaterial);
-// scene.add(grid);
+      for (let i = 0; i < len; i++) {
+          if (Math.random() < 0.5) {
+              buffer32[i] = 0xff000000;
+          }
+      }
 
-// var raycaster = new THREE.Raycaster();
-// var mouse = new THREE.Vector2();
+      noiseData.push(idata);
+  };
 
-// document.addEventListener('mousemove', onMouseMove, false);
 
-// function onMouseMove(event) {
-//     // Mettre à jour les coordonnées de la souris
-//     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-//     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  // Play Noise
+  const paintNoise = () => {
+      if (frame === 9) {
+          frame = 0;
+      } else {
+          frame++;
+      }
 
-//     // Lancer un rayon depuis la position de la souris
-//     raycaster.setFromCamera(mouse, camera);
+      ctx.putImageData(noiseData[frame], 0, 0);
+  };
 
-//     // Vérifier les intersections avec le quadrillage
-//     var intersects = raycaster.intersectObjects([grid]);
 
-//     // Rendre le quadrillage visible si la souris le survole
-//     if (intersects.length > 0) {
-//         gridMaterial.visible = true;
-//     } else {
-//         gridMaterial.visible = false;
-//     }
-// }
+  // Loop
+  const loop = () => {
+      paintNoise(frame);
+
+      loopTimeout = window.setTimeout(() => {
+          window.requestAnimationFrame(loop);
+      }, (1000 / 25));
+  };
+
+
+  // Setup
+  const setup = () => {
+      wWidth = window.innerWidth;
+      wHeight = document.documentElement.scrollHeight;
+
+      canvas.width = wWidth;
+      canvas.height = wHeight;
+
+      for (let i = 0; i < 10; i++) {
+          createNoise();
+      }
+
+      loop();
+  };
+
+
+  // Reset
+  let resizeThrottle;
+  const reset = () => {
+      window.addEventListener('resize', () => {
+          window.clearTimeout(resizeThrottle);
+
+          resizeThrottle = window.setTimeout(() => {
+              window.clearTimeout(loopTimeout);
+              setup();
+          }, 200);
+      }, false);
+  };
+
+
+  // Init
+  const init = (() => {
+      canvas = document.getElementById('noise');
+      ctx = canvas.getContext('2d');
+
+      setup();
+  })();
+};
+
+noise();
 
 const buttons = document.querySelectorAll(".map button");
 const slides = document.querySelector(".card-skills-img-layout");

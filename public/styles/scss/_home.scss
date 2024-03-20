@@ -3,19 +3,22 @@
 #home{
     @include coloredTitle;
     position: relative;
-    z-index: 2;
     margin-top:120px;
     margin-bottom: 100px;  
+  }
+
+  .wrapper{
+    text-align: center;
   }
 
   h1{
     background: $grey-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size:6rem;
+      font-size:6rem !important;
       font-family: "Quattrocento", serif;
       font-weight: 900;
       text-align: center;
-      margin-top: 5rem;
-      margin-bottom: 10rem;
+      margin-top: 5rem !important;
+      margin-bottom: 10rem !important;
   }

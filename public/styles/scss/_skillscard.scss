@@ -3,12 +3,9 @@
 .card-skills{
     @include cardBg;
     width:100%;
-    height:100%;
-    grid-row: 1/2;
-    grid-column: 2/4;
-   
-   
+    height:400px;
   }
+
  #card-skills-id{
   overflow: hidden;
   display: flex;
@@ -48,10 +45,7 @@
           transform: rotateY(360deg) translateZ(100px); 
       }
   }
-  .card-skills{
-    height: 400px;
-  }
-
+ 
   .card-skills-img-layout{
     display: flex;
     transition: all 1s ease-in-out;
@@ -75,7 +69,6 @@
   height:170px;
   border:0.5px solid rgba(231, 230, 230, 0.382);
   background: -webkit-linear-gradient(#ffff, #afafaf);
-  display: grid;
   place-items: center;
 
  }

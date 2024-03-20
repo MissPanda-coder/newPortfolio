@@ -3,23 +3,11 @@
 .card-text-p{
     @include cardBg;
     width:100%;
-    height:390px;
+    height:400px;
 }
 
 .card-text-p-title{
   height:80px;
-}
-
-#card-text-firstP{
-    grid-row: 2/3;
-    grid-column: 2/3;
-    height:100%;
-}
-
-#card-text-secondP{
-    grid-row: 2/3;
-    grid-column: 3/4;
-    height:100%;
 }
 
 .article-description{

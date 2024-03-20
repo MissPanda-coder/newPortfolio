@@ -33,3 +33,11 @@ $border:1px solid rgba(243, 241, 241, 0.16);
     height: 0.9rem;
     width: 0.9rem;
   }
+
+  @mixin bordersProjects{
+    border-top:1px solid rgba(230, 230, 230, 0.243);
+    border-left:1px solid rgba(230, 230, 230, 0.243);
+    border-right:1px solid rgba(230, 230, 230, 0.243);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+  }

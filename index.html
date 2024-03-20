@@ -55,9 +55,11 @@
     <div class="wrapper-name" id="about">
       <div class="name">A Propos</div>
     </div>
-    <div class="grid-container">
-      <div class="cards-grid">
+    <div class="grid-layout">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 mb-4">
           <div class="card-presentation">
+            
               <div class="card-presentation-img" id="#about">
               </div>
              <div class="card-presentation-layout">
@@ -77,9 +79,9 @@
                 >Télécharger CV</a
               >
           </div>
-      
-        
-
+        </div>
+          <div class="col-lg-9 col-md-6 mb-4">
+        <div class="mb-4">
         <div class="card-skills" id="card-skills-id">
             <div class="card-skills-title">
                     <span class="card-skills-text" style="--i:1;">C</span>
@@ -174,11 +176,9 @@
               <button class="third"></button>
             </div>
         </div>   
-           
-          
-          
-        
-
+        </div>
+              <div class="row">
+              <div class="col-md-6 mb-4">
         <div class="card-text-p" id="card-text-firstP">
             <div class="card-text-p-title text-align-center">
               <h2 class="card-presentation-title">Conceptrice web passionnée</h2>
@@ -200,8 +200,8 @@
               </p>
             </div>
         </div>
-        
-
+      </div>
+      <div class="col-md-6">
         <div class="card-text-p" id="card-text-secondP">
           <div class="card-text-p-title text-align-center">
               <h2 class="card-presentation-title">Sécurité, Performance, Conception</h2>
@@ -221,6 +221,10 @@
             </div>
         </div>
       </div>
+          </div>
+        </div>
+          
+      </div>
     </div>
   </section>
 
@@ -228,28 +232,46 @@
     <div class="wrapper-name" id="wrapper-name-projects">
       <div class="name">Réalisations</div>
     </div>
-    <div class="projects-grid">
+    <div class="grid-layout">
+      <div class="row">
+    <div class="col-lg-8 col-md-8 mb-4">
     <div class="project-wrapper-deliver">
       <img class="project-img" src="public/img/deliver.png" alt="photo de mon projet appelé DeliverLeBeausset">
     </div>
-    <div class="project-text-deliver">
-    <p>Projet en cours de réalisation</p>
   </div>
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="project-text-deliver">
+    <h2 class="card-presentation-title">Projet en cours de réalisation</h2>
+    <p class="text-white-50">
+      Mon dernier projet en cours : une plateforme e-commerce conçue spécialement pour les personnes âgées du village du Beausset, qui sont âgés ou en situation de handicap et ont des difficultés à se déplacer pour faire leurs achats.
+L'objectif de ce projet est de faciliter la vie de nos résidents les plus vulnérables en leur offrant un moyen pratique et sûr de faire leurs achats. 
+J'explore la possibilité d'un partenariat avec la Mairie du Beausset pour offrir des livraisons gratuites à ceux qui en ont le plus besoin.
+    </p>
+  </div>
+  </div>
+      </div>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 mb-4">
     <div class="project-wrapper-superman">
       <img class="project-img" src="public/img/superman.png" alt="photo de mon projet superman">
     </div>
-    <div class="project-text-superman">
-    <p>Projet en cours de réalisation</p>
-  </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-4 mb-4">
+    <article class="project-text-superman">
+    <h2 class="card-presentation-title">Projet superman</h2>
+    <p class="text-white-50"> Dans ce projet, j'ai mis en œuvre mes compétences en CSS, notamment en utilisant les puissants outils que sont les grid en SCSS. Grâce à ces fonctionnalités avancées, j'ai conçu la mise en page de cette page thème Superman de manière structurée et élégante, tout en gagnant en flexibilité et en maintenabilité.
 
+      Mais ce n'est pas tout ! En plus des grid, j'ai également intégré des animations de carte 3D. Ces animations ajoutent une touche d'interactivité et de dynamisme à la page, donnant vie aux éléments visuels et captivant l'attention des apprenants.
 
-  </div>
+    </p>
+  </article>
+    </div>
+</div>
+    </div>
 
-
-    </section>
-
-
-    <canvas id="noise" class="noise"></canvas>
+  </section>
+  <canvas id="noise" class="noise"></canvas>
   <div class="vignette"></div>
   <div class="dot"></div>
     

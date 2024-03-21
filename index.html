@@ -11,13 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <meta name="description" content="Découvrez mon portfolio en tant que développeuse web spécialisée dans le développement web mobile. Passionnée par la conception et le développement de sites web optimisés et accessibles. Explorez mes compétences en conception, développement et optimisation de sites web, ainsi que mes réalisations et projets en cours. Contactez-moi pour discuter de vos besoins en matière de développement web mobile. Avec mon expertise et mon engagement envers la qualité, je suis prête à vous accompagner dans la réalisation de vos projets web mobiles.">
     <title>Portfolio Adeline A.</title>
   </head>
   <body>
     
   <section class="dot-anime">
-    
+    <header>
     <nav class="navbar navbar-default navbar-expand-lg nav-menu">
         <div class="container-fluid">
           <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
@@ -44,20 +44,21 @@
           </div>
         </div>
     </nav>
+  </header>
     <section class="wrapper">
-      <div class="wrapper-name" id="home">
-        <div class="name">Bienvenue sur mon portfolio</div>
-      </div>
+      <section class="wrapper-name" id="home">
+        <button class="name">Bienvenue sur mon portfolio</button>
+      </section>
       <h1>
         Developpeuse web <br />
         web mobile
       </h1>
     </section>
 
-<section class="wrapper">
-    <div class="wrapper-name" id="about">
-      <div class="name">A Propos</div>
-    </div>
+<main class="wrapper">
+    <section class="wrapper-name" id="about">
+      <button class="name">A Propos</button>
+    </section>
     <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12">
@@ -235,12 +236,12 @@
       </div>
     </div>
     </div>
-  </section>
+  </main>
 
   <section class="wrapper" id="projects">
-    <div class="wrapper-name" id="wrapper-name-projects">
-      <div class="name">Réalisations</div>
-    </div>
+    <section class="wrapper-name" id="wrapper-name-projects">
+      <button class="name">Réalisations</button>
+    </section>
     <div class="container">
       <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-12 mb-4">
@@ -291,9 +292,9 @@ J'explore la possibilité d'un partenariat avec la Mairie du Beausset pour offri
   </section>
 
   <section class="wrapper" id="contact">
-    <div class="wrapper-name" id="wrapper-name-contact">
-      <div class="name">Contact</div>
-    </div>
+    <section class="wrapper-name" id="wrapper-name-contact">
+      <button class="name">Contact</button>
+    </section>
     <div class="container">
     <form id="contact-form" role="form">
         <fieldset class="form-group">
@@ -329,9 +330,6 @@ J'explore la possibilité d'un partenariat avec la Mairie du Beausset pour offri
            <img src="public/img/codepen-logo-24.png" alt="logo de Codepen"></a>
           </li>    
         </ul>
-
-
-
   </footer>
     
   <canvas id="noise" class="noise"></canvas>

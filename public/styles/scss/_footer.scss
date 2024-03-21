@@ -1,21 +1,29 @@
 @import "_variables";
 
 
-// footer{
-//     display: flex;
-//     flex-flow: column nowrap;
-// }
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top:50px;
+}
+
 .contact-list {
-list-style-type: none;
+list-style: none;
 display: flex;
 flex-flow: row wrap;
+justify-content: center;
   }
    
+.list-items{
+    margin-right:2rem;
+}
+.list-items img{
+    margin-right:0.5rem;
+}
   .contact-text {
     font-family: "Quattrocento", serif;
     letter-spacing: 1.9px;
     color: #bbb;
-    margin-left: 53px;
   }
   
   .contact-text-a {
@@ -51,7 +59,7 @@ flex-flow: row wrap;
     line-height: 60px;
     border-radius: 50%;
     color: #fff;
-    background-color: rgb(27,27,27);
+    background-color: white;
     cursor: pointer; 
     transition: all .2s ease-in-out;
   }

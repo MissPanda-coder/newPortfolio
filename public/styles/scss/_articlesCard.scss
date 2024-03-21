@@ -3,7 +3,7 @@
 .card-text-p{
     @include cardBg;
     width:100%;
-    height:400px;
+    height:100%;
 }
 
 .card-text-p-title{
@@ -11,8 +11,8 @@
 }
 
 .article-description{
-    padding:5px 5px;
     line-height:2rem;
+    margin:1vw;
   }
 
 .article-description-colorPink{

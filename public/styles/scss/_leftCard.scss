@@ -13,17 +13,17 @@
   .card-presentation-img {
   background-image: url("../../img/ICZK0901.JPEG");
   width: 100%;
-  height: 23rem;
+  height: clamp(10rem, 20vw, 20rem);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: $border;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  margin-bottom: 2rem;
+  margin-bottom: 2vh;
   }
   
   .card-presentation-layout{
-    height:300px;
+    height:35vh;
   }
 
   .card-presentation-title{
@@ -37,16 +37,16 @@
   }
   
   .card-presentation-text{
-     margin:7px;
+     margin:1vw;
   }
   
   #cv-button {
       position: absolute;
-      bottom:20px;
-      padding: 10px 10px;
+      bottom:2vw;
+      padding: 0.6vw 0.6vw;
       text-transform: uppercase;
-      border-radius: 8px;
-      font-size: 14px;
+      border-radius: 0.6vw;
+      font-size: 1rem;
       font-weight: 500;
       color: #ffffff80;
       text-shadow: none;
@@ -69,4 +69,30 @@
                   0 0 20px #ffffff,
                   0 0 50px #ffffff,
                   0 0 100px #ffffff;
+    }
+
+
+    @media (max-width: 767px) {
+      .card-presentation {
+        margin-bottom: 20px; /* Réduire l'espace entre les cartes */
+        height: auto; /* Permettre aux cartes de s'ajuster en hauteur en fonction de leur contenu */
+      }
+    
+      .card-presentation-img {
+        height: 200px; /* Réduire la hauteur de l'image à l'intérieur de la carte */
+      }
+    
+      .card-presentation-title {
+        font-size: 18px; /* Réduire la taille de la police du titre */
+      }
+    
+      .card-presentation-text {
+        font-size: 14px; 
+        margin-bottom: 10px; 
+      }
+    
+      #cv-button {
+        font-size: 12px; /* Réduire la taille de la police du bouton */
+        padding: 5px 10px; /* Réduire le rembourrage du bouton */
+      }
     }

@@ -1,3 +1,13 @@
+// ===== HAMBURGER BUTTON ===== //
+document.addEventListener('DOMContentLoaded', function() {
+  let navButton = document.querySelector('.nav-button');
+  let navBar = document.getElementById('myNavbar'); 
+  navButton.addEventListener('click', function() {
+    navButton.classList.toggle('change');
+    
+   
+  });
+});
 
 const noise = () => {
   let canvas, ctx;
@@ -111,4 +121,12 @@ buttons.forEach(button => {
       slides.style.transform = `translateX(${currentPosition}%)`; 
     }
   });
+});
+
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  e.target.elements.name.value = '';
+  e.target.elements.email.value = '';
+  e.target.elements.message.value = '';
 });

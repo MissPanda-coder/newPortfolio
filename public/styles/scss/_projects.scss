@@ -15,8 +15,10 @@
 .project-img{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .project-text-deliver, .project-text-superman{
@@ -26,4 +28,14 @@
 .project-wrapper-superman{
   @include bordersProjects;
     overflow: hidden;
+}
+
+#end{
+  margin-top : 50px;
+  margin-bottom: 80px;
+  background: $grey-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2rem, 15vw, 5rem) !important;
+  font-family: "Quattrocento", serif;
 }

@@ -1,0 +1,52 @@
+@import "_variables";
+
+  #wrapper-name-contact{
+    @include coloredTitle;
+    position: relative;
+    z-index: 2;
+    margin-top:120px;
+    margin-bottom: 100px; 
+  }
+
+  #contact-form {
+    width:100%;
+    font-family: "Quattrocento", serif;
+  }
+  
+  .form-control, 
+    textarea {
+    width:100%;
+    background-color: transparent !important;
+    letter-spacing: 1px;
+    margin-bottom:2.5rem;
+    outline: none;
+  }
+
+  .form-control::placeholder,
+  textarea::placeholder{
+    color: #bbb !important;
+    outline: none;
+    text-shadow: none;
+  }
+
+  .form-control:focus,
+  textarea:focus{
+    color: #bbb !important;
+    outline: none;
+    text-shadow: none;
+  }
+
+  .form-group{
+    margin:5px 0;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  
+

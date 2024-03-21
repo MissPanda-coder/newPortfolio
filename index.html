@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
     <link rel="stylesheet" href="public/styles/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +15,9 @@
     <title>Portfolio Adeline A.</title>
   </head>
   <body>
+    
   <section class="dot-anime">
+    
     <nav class="navbar navbar-default navbar-expand-lg nav-menu">
         <div class="container-fluid">
           <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
@@ -35,7 +38,7 @@
                 <a class="nav-link m-2 menu-item" href="#projects"> Réalisations </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-2 menu-item" href="contact"> Contact </a>
+                <a class="nav-link m-2 menu-item" href="#contact"> Contact </a>
               </li>
             </ul>
           </div>
@@ -55,22 +58,25 @@
     <div class="wrapper-name" id="about">
       <div class="name">A Propos</div>
     </div>
-    <div class="grid-layout">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-4 mb-4">
+          <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="card-presentation">
             
-              <div class="card-presentation-img" id="#about">
+              <div class="card-presentation-img">
               </div>
              <div class="card-presentation-layout">
               <h2 class="card-presentation-title">Adeline Aiguier</h2>
-              <p class="card-presentation-text text-white-50 text-center">
+              <div class="card-presentation-text">
+              <p class="text-white-50 text-center">
                 Développeuse web junior, je suis prête à relever des défis et
                 projets audacieux. <br />
                 Ma force ? Ne jamais me reposer sur mes
                 acquis.
               </p>
             </div>
+            </div>
+           
               <a
                 id="cv-button"
                 href="public/img/CV.pdf"
@@ -79,8 +85,9 @@
                 >Télécharger CV</a
               >
           </div>
-        </div>
-          <div class="col-lg-9 col-md-6 mb-4">
+          </div>
+        
+          <div class="col-lg-9 col-md-9 col-sm-12">
         <div class="mb-4">
         <div class="card-skills" id="card-skills-id">
             <div class="card-skills-title">
@@ -178,7 +185,8 @@
         </div>   
         </div>
               <div class="row">
-              <div class="col-md-6 mb-4">
+                
+              <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="card-text-p" id="card-text-firstP">
             <div class="card-text-p-title text-align-center">
               <h2 class="card-presentation-title">Conceptrice web passionnée</h2>
@@ -201,7 +209,7 @@
             </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="card-text-p" id="card-text-secondP">
           <div class="card-text-p-title text-align-center">
               <h2 class="card-presentation-title">Sécurité, Performance, Conception</h2>
@@ -226,23 +234,24 @@
           
       </div>
     </div>
+    </div>
   </section>
 
   <section class="wrapper" id="projects">
     <div class="wrapper-name" id="wrapper-name-projects">
       <div class="name">Réalisations</div>
     </div>
-    <div class="grid-layout">
+    <div class="container">
       <div class="row">
-    <div class="col-lg-8 col-md-8 mb-4">
+    <div class="col-lg-8 col-md-8 col-sm-12 mb-4">
     <div class="project-wrapper-deliver">
       <img class="project-img" src="public/img/deliver.png" alt="photo de mon projet appelé DeliverLeBeausset">
     </div>
   </div>
-  <div class="col-lg-4 col-md-4 mb-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <div class="project-text-deliver">
     <h2 class="card-presentation-title">Projet en cours de réalisation</h2>
-    <p class="text-white-50">
+    <p class="article-description text-white-50">
       Mon dernier projet en cours : une plateforme e-commerce conçue spécialement pour les personnes âgées du village du Beausset, qui sont âgés ou en situation de handicap et ont des difficultés à se déplacer pour faire leurs achats.
 L'objectif de ce projet est de faciliter la vie de nos résidents les plus vulnérables en leur offrant un moyen pratique et sûr de faire leurs achats. 
 J'explore la possibilité d'un partenariat avec la Mairie du Beausset pour offrir des livraisons gratuites à ceux qui en ont le plus besoin.
@@ -250,17 +259,19 @@ J'explore la possibilité d'un partenariat avec la Mairie du Beausset pour offri
   </div>
   </div>
       </div>
+    </div>
+    <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-md-8 mb-4">
+    <div class="col-lg-8 col-md-8 col-sm-12 mb-4">
     <div class="project-wrapper-superman">
       <img class="project-img" src="public/img/superman.png" alt="photo de mon projet superman">
     </div>
     </div>
     
-    <div class="col-lg-4 col-md-4 mb-4">
+    <div class="col-lg-4 col-md-4 col-sm-12">
     <article class="project-text-superman">
     <h2 class="card-presentation-title">Projet superman</h2>
-    <p class="text-white-50"> Dans ce projet, j'ai mis en œuvre mes compétences en CSS, notamment en utilisant les puissants outils que sont les grid en SCSS. Grâce à ces fonctionnalités avancées, j'ai conçu la mise en page de cette page thème Superman de manière structurée et élégante, tout en gagnant en flexibilité et en maintenabilité.
+    <p class="article-description text-white-50"> Dans ce projet, j'ai mis en œuvre mes compétences en CSS, notamment en utilisant les puissants outils que sont les grid en SCSS. Grâce à ces fonctionnalités avancées, j'ai conçu la mise en page de cette page thème Superman de manière structurée et élégante, tout en gagnant en flexibilité et en maintenabilité.
 
       Mais ce n'est pas tout ! En plus des grid, j'ai également intégré des animations de carte 3D. Ces animations ajoutent une touche d'interactivité et de dynamisme à la page, donnant vie aux éléments visuels et captivant l'attention des apprenants.
 
@@ -268,11 +279,64 @@ J'explore la possibilité d'un partenariat avec la Mairie du Beausset pour offri
   </article>
     </div>
 </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+<p class="text-white-50" id="end">To be continued ...</p>
+  </div>
     </div>
-
+  </div>
+    </div>
   </section>
+
+  <section class="wrapper" id="contact">
+    <div class="wrapper-name" id="wrapper-name-contact">
+      <div class="name">Contact</div>
+    </div>
+    <div class="container">
+    <form id="contact-form" role="form">
+        <fieldset class="form-group">
+            <input type="text" class="form-control" id="last-name" placeholder="NOM" name="last-name" value="" required>
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required >
+            <textarea class="form-control" rows="7" placeholder="MESSAGE" name="message" required ></textarea>
+        </fieldset>
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" autocomplete="off">ENVOYER      
+      </button>  
+    </form>
+  </div>
+</section>
+  <footer>
+  <div class="direct-contact-container">
+    <div class="container">
+        <ul class="contact-list">
+          <li class="list-items">
+            <span class="contact-text text-white-50">Adeline AIGUIER</span></li>
+          <li class="list-items"><img src="public/img/current-location-regular-24.png" alt="signal localisation" class="image-blanc"><span class="contact-text text-white-50">11 rue Victor Hugo</span></li>
+          <li class="list-items"><span class="contact-text text-white-50">83330 Le Beausset</span></li>
+          <li class="list-item"><img src="public/img/phone-call-regular-24 (1).png" alt="telephone" class="image-blanc">
+            <span class="contact-text phone text-white-50">06 65 42 31 49</span></li>
+          
+          <li class="list-items"><img src="public/img/mail-send-regular-24 (1).png" alt="telephone" class="image-blanc">
+            <span class="contact-text text-white-50"><a href="mailto:#" class="contact-text-a" title="Send me an email">adeline.aiguier@gmail.com</a></span></li>
+          
+        </ul>
+
+        <ul class="social-media-list">
+          <li><a href="https://github.com/MissPanda-coder" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://codepen.io/Ad-Line" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-codepen" aria-hidden="true"></i></a>
+          </li>    
+        </ul>
+
+  </div>
+</div>
+  </footer>
+    
   <canvas id="noise" class="noise"></canvas>
-  <div class="vignette"></div>
+ 
   <div class="dot"></div>
     
   </section>
